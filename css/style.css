@@ -1,0 +1,352 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  font-family: helvetica, arial;
+  background: green;
+}
+
+#page {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+header {
+  background: green;
+  padding: 1rem;
+}
+
+main {
+  background: whitesmoke;
+  color: #444;
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+}
+
+footer {
+  background: darkgreen;
+  padding: 1rem;
+}
+
+p {
+  width: 80%;
+  display: inline-block;
+}
+
+li {
+  display: flex;
+  align-items: left;
+  text-align: left;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0 0 0 0;
+}
+
+.radioButton {
+  display: flex;
+  align-items: left;
+}
+
+.labels {
+  justify-self: end;
+  text-align: right;
+}
+
+.responses {
+  padding-bottom: 20px;
+}
+
+#commentsText {
+  width: 100%;
+}
+
+/* Grid positioning */
+.personal-info {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "personal-header"
+    "name1" "name2"
+    "email1" "email2"
+    "age1" "age2"
+    "knowledge1" "knowledge2"
+    "learned1" "learned2";
+}
+.personal-header {
+  grid-area: personal-header;
+}
+.name1 {
+  grid-area: name1;
+}
+.name2 {
+  grid-area: name2;
+}
+.email1 {
+  grid-area: email1;
+}
+.email2 {
+  grid-area: email2;
+}
+.age1 {
+  grid-area: age1;
+}
+.age2 {
+  grid-area: age2;
+}
+.knowledge1 {
+  grid-area: knowledge1;
+}
+.knowledge2 {
+  grid-area: knowledge2;
+}
+.learned1 {
+  grid-area: learned1;
+}
+.learned2 {
+  grid-area: learned2;
+}
+
+.pre-cte {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "pre-cte-header"
+    "played1" "played2"
+    "level1" "level2"
+    "approval1" "approval2"
+    "watch1" "watch2"
+    "participate1" "participate2";
+}
+.pre-cte-header {
+  grid-area: pre-cte-header;
+}
+.played1 {
+  grid-area: played1;
+}
+.played2 {
+  grid-area: played2;
+}
+.level1 {
+  grid-area: level1;
+}
+.level2 {
+  grid-area: level2;
+}
+.approval1 {
+  grid-area: approval1;
+}
+.approval2 {
+  grid-area: approval2;
+}
+.watch1 {
+  grid-area: watch1;
+}
+.watch2 {
+  grid-area: watch2;
+}
+.participate1 {
+  grid-area: participate1;
+}
+.participate2 {
+  grid-area: participate2;
+}
+
+.post-cte {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "post-header"
+    "willPlay1"
+    "willPlay2"
+    "postLevel1"
+    "postLevel2"
+    "postApproval1"
+    "postApproval2"
+    "postWatch1"
+    "postWatch2"
+    "postParticipate1"
+    "postParticipate2"
+    "replaced1"
+    "replaced2"
+    "replacement1"
+    "replacement2";
+}
+.post-header {
+  grid-area: post-header;
+}
+.willPlay1 {
+  grid-area: willPlay1;
+}
+.willPlay2 {
+  grid-area: willPlay2;
+}
+.postLevel1 {
+  grid-area: postLevel1;
+}
+.postLevel2 {
+  grid-area: postLevel2;
+}
+.postApproval1 {
+  grid-area: postApproval1;
+}
+.postApproval2 {
+  grid-area: postApproval2;
+}
+.postWatch1 {
+  grid-area: postWatch1;
+}
+.postWatch2 {
+  grid-area: postWatch2;
+}
+.postParticipate1 {
+  grid-area: postParticipate1;
+}
+.postParticipate2 {
+  grid-area: postParticipate2;
+}
+.replaced1 {
+  grid-area: replaced1;
+}
+.replaced2 {
+  grid-area: replaced2;
+}
+.replacement1 {
+  grid-area: replacement1;
+}
+.replacement2 {
+  grid-area: replacement2;
+}
+
+@media (max-width: 800px) {
+  .personal-info {
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas:
+      "personal-header personal-header"
+      "name1 name2"
+      "email1 email2"
+      "age1 age2"
+      "knowledge1 knowledge1"
+      "knowledge2 knowledge2"
+      "learned1 learned1"
+      "learned2 learned2";
+  }
+  .pre-cte {
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "pre-cte-header pre-cte-header"
+      "played1" "played2"
+      "level1" "level2"
+      "approval1" "approval2"
+      "watch1" "watch2"
+      "participate1" "participate2";
+  }
+  .post-cte {
+    grid-template-rows: repeat(15, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "post-header"
+      "willPlay1"
+      "willPlay2"
+      "postLevel1"
+      "postLevel2"
+      "postApproval1"
+      "postApproval2"
+      "postWatch1"
+      "postWatch2"
+      "postParticipate1"
+      "postParticipate2"
+      "replaced1"
+      "replaced2"
+      "replacement1"
+      "replacement2";
+  }
+  li {
+    display: flex;
+    align-items: left;
+    text-align: left;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  .radioButton {
+    display: flex;
+    align-items: left;
+  }
+
+  .labels {
+    justify-self: start;
+    text-align: left;
+  }
+}
+
+@media (min-width: 800px) {
+  .personal-info {
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "personal-header personal-header"
+      "name1 name2"
+      "email1 email2"
+      "age1 age2"
+      "knowledge1 knowledge2"
+      "learned1 learned2";
+  }
+  .pre-cte {
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "pre-cte-header pre-cte-header"
+      "played1 played2"
+      "level1 level2"
+      "approval1 approval2"
+      "watch1 watch2"
+      "participate1 participate2";
+  }
+  .post-cte {
+    grid-template-rows: repeat(8, auto);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "post-header post-header"
+      "willPlay1 willPlay2"
+      "postLevel1 postLevel2"
+      "postApproval1 postApproval2"
+      "postWatch1 postWatch2"
+      "postParticipate1 postParticipate2"
+      "replaced1 replaced2"
+      "replacement1 replacement2";
+  }
+  li {
+    display: flex;
+    align-items: left;
+    text-align: left;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  .radioButton {
+    display: flex;
+    align-items: left;
+  }
+
+  .labels {
+    justify-self: end;
+    text-align: right;
+  }
+}

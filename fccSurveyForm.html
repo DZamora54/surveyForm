@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>CTE and American Football</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div id="page">
+      <header id="survey-header">
+        <h1 id="title">CTE and American Football</h1>
+      </header>
+      <main>
+        <div id="survey-description">
+          <p id="description">
+            The goal of this survey is to find out what, if any, impact your
+            current knowledge and understanding of CTE has had on your opinions
+            toward American football.
+          </p>
+        </div>
+        <div id="survey">
+          <form id="survey-form">
+            <div class="personal-info">
+              <!-- Personal info section -->
+              <label class="labels name1" for="name" id="name-label"
+                >Name</label
+              >
+              <!-- User name input -->
+              <input
+                class="responses short-text name2"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Please enter your name"
+                required
+              />
+
+              <label class="labels email1" for="email" id="email-label"
+                >Email</label
+              >
+              <!-- User email input -->
+              <input
+                class="responses short-text email2"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Please enter your email"
+                required
+              />
+
+              <label class="labels age1" for="number" id="number-label"
+                >Age</label
+              >
+              <!-- User age input -->
+              <input
+                class="responses short-text age2"
+                type="number"
+                name="number"
+                id="number"
+                placeholder="Please enter your age"
+                min="0"
+                max="120"
+                required
+              />
+
+              <label class="labels knowledge1" for="dropdown"
+                >How would you rate your knowledge of CTE?</label
+              >
+              <!-- User self rating of CTE knowledge -->
+              <select class="responses knowledge2" id="dropdown">
+                <option disabled selected value>Select an option</option>
+                <option value="a">I have not heard the term CTE before.</option>
+                <option value="b"
+                  >I have heard the term CTE but know almost nothing about
+                  it.</option
+                >
+                <option value="c">I know a little about CTE.</option>
+                <option value="d"
+                  >I feel I have a good understanding of CTE.</option
+                >
+                <option value="e">I am a subject matter expert on CTE.</option>
+              </select>
+
+              <label class="labels learned1"
+                >How have you learned about CTE? (Check all that apply)</label
+              >
+              <!-- How has the user learned about CTE -->
+              <ul
+                class="responses learned2"
+                id="checkboxes"
+                style="list-style: none"
+              >
+                <li>
+                  <label
+                    ><input name="cb" value="1" type="checkbox" />Television
+                    news</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="2" type="checkbox" />Print
+                    article</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="3" type="checkbox" />Online
+                    article</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="4" type="checkbox" />Talk or
+                    lecture</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="4" type="checkbox" />I haven't
+                    heard anything about CTE</label
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- End personal info section -->
+
+            <div class="pre-cte">
+              <h3 class="pre-cte-header">
+                This set of questions applies to before learning about CTE
+              </h3>
+
+              <label class="labels played1"
+                >Have you played American football?</label
+              >
+              <div class="responses played2" id="havePlayed">
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="yes" />Yes</label
+                >
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="no" />No</label
+                >
+              </div>
+
+              <label class="labels level1"
+                >What levels of American football have you played? (Check all
+                that apply)</label
+              >
+              <ul class="responses level2" style="list-style: none">
+                <li>
+                  <label
+                    ><input name="cb" value="1" type="checkbox" />Youth football
+                    (Pop Warner, AYFL, Neighborhood football...)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="2" type="checkbox" />High
+                    School</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="3" type="checkbox" />College</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      name="cb"
+                      value="4"
+                      type="checkbox"
+                    />Semi-Pro</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      name="cb"
+                      value="5"
+                      type="checkbox"
+                    />Professional</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      name="cb"
+                      value="6"
+                      type="checkbox"
+                    />Backyard</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="7" type="checkbox" />Never
+                    played</label
+                  >
+                </li>
+              </ul>
+
+              <label class="labels approval1"
+                >Would you have given approval/permission to play football to
+                someone you cared about?</label
+              >
+              <div class="responses approval2">
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="yes" />Yes</label
+                >
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="no" />No</label
+                >
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="no" />Maybe</label
+                >
+              </div>
+
+              <label class="labels watch1"
+                >During football season did you typically watch one or more
+                games each week?</label
+              >
+              <div class="responses watch2">
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="yes" />Yes</label
+                >
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="no" />No</label
+                >
+              </div>
+
+              <label class="labels participate1"
+                >Did you participate in any of the following? (Check all that
+                apply)</label
+              >
+              <ul class="responses participate2" style="list-style: none">
+                <li>
+                  <label
+                    ><input name="cb" value="1" type="checkbox" />Fantasy
+                    football (league, weekly, daily..)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="2" type="checkbox" />Gambling
+                    (online or offline sportsbook, office pool, with
+                    friends...)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="7" type="checkbox" />None of the
+                    above</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="post-cte">
+              <h3 class="post-header">
+                This set of questions applies to after learning about CTE
+              </h3>
+
+              <label class="labels willPlay1"
+                >Did you continue to play American football?</label
+              >
+              <div class="responses willPlay2">
+                <label class="radioButton">
+                  <input type="radio" name="yes-no" value="yes" />Yes</label
+                >
+                <label class="radioButton">
+                  <input type="radio" name="yes-no" value="no" />No</label
+                >
+              </div>
+
+              <label class="labels postLevel1"
+                >What levels of American football did you play? (Check all that
+                apply)</label
+              >
+              <ul class="responses postLevel2" style="list-style: none">
+                <li>
+                  <label
+                    ><input name="cb" value="1" type="checkbox" />Youth football
+                    (Pop Warner, AYFL, Neighborhood football...)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="2" type="checkbox" />High
+                    School</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="3" type="checkbox" />College</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      name="cb"
+                      value="4"
+                      type="checkbox"
+                    />Semi-Pro</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      name="cb"
+                      value="5"
+                      type="checkbox"
+                    />Professional</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input
+                      name="cb"
+                      value="6"
+                      type="checkbox"
+                    />Backyard</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="7" type="checkbox" />Never
+                    played</label
+                  >
+                </li>
+              </ul>
+
+              <label class="labels postApproval1"
+                >Will you give approval/permission to play football to someone
+                you care about?</label
+              >
+              <div class="responses postApproval2">
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="yes" />Yes</label
+                >
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="no" />No</label
+                >
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="no" />Maybe</label
+                >
+              </div>
+
+              <label class="labels postWatch1"
+                >During football season do you typically watch one or more games
+                each week?</label
+              >
+              <div class="responses postWatch2">
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="yes" />Yes</label
+                >
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="no" />No</label
+                >
+              </div>
+
+              <label class="labels postParticipate1"
+                >Do you participate in any of the following? (Check all that
+                apply)</label
+              >
+              <ul class="responses postParticipate2" style="list-style: none">
+                <li>
+                  <label
+                    ><input name="cb" value="1" type="checkbox" />Fantasy
+                    football (league, weekly, daily..)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="2" type="checkbox" />Gambling
+                    (online or offline sportsbook, office pool, with
+                    friends...)</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input name="cb" value="7" type="checkbox" />None of the
+                    above</label
+                  >
+                </li>
+              </ul>
+
+              <label class="labels replaced1"
+                >Have you replaced your activities related to American football
+                with something else?</label
+              >
+              <div class="responses replaced2">
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="yes" />Yes</label
+                >
+                <label class="radioButton"
+                  ><input type="radio" name="yes-no" value="no" />No</label
+                >
+              </div>
+
+              <label class="labels replacement1"
+                >If you replaced your activities related to football, what did
+                you replace them with?</label
+              >
+              <textarea class="responses replacement2"></textarea>
+            </div>
+
+            <div class="comments">
+              <div class="responses text-area" id="additional-comments-div">
+                <label class="labels"
+                  >Please enter any additional comments here?</label
+                >
+                <textarea class="responses" id="commentsText"></textarea>
+              </div>
+            </div>
+
+            <div class="submit-button">
+              <input id="submit" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <footer><small>&#169; Dante Zamora 2018</small></footer>
+    </div>
+  </body>
+</html>
